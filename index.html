@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./tailwind.config.js"></script>
-  <title>File Converter</title>
-</head>
-<body>
-  <div class="w-screen">
-    <nav class="bg-blue-700 text-white w-full pl-10 py-6 font-semibold text-4xl" >FileFly</nav>
-    <main class="bg-slate-400 w-full h-screen"></main>
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="./tailwind.config.js"></script>
+		<title>File Converter</title>
+	</head>
+	<body>
+		<div class="w-screen">
+			<nav
+				class="bg-blue-700 text-white w-full pl-10 py-6 font-semibold text-4xl"
+			>
+				FileFly
+			</nav>
+			<main
+				class="w-full h-screen flex flex-col gap-12 md:flex-row md:gap-28 items-center justify-center"
+			>
+				<!-- <div class="bg-white gap-32 flex justify-between "> -->
+				<!-- <label for="doc-to-pdf"> -->
+				<label
+					for="doc-to-pdf"
+					class="bg-blue-700 text-white text-2xl p-12 rounded-2xl shadow-xl md:cursor-pointer"
+					aria-label="Convert document to PDF"
+				>
+					Document <br />
+					to <br />
+					PDF
+				</label>
+					<label
+          for="pdf-to-doc"
+						class="bg-blue-700 text-white text-2xl p-12 rounded-2xl shadow-xl"
+						aria-label="convert PDF to document"
+					>
+						PDF <br />
+						to <br />
+						Document
+      </label>
+				<input type="file" id="doc-to-pdf" class="hidden" />
+        <input type="file" id="pdf-to-doc" class="hidden">
+				<!-- </div> -->
+			</main>
+		</div>
+	</body>
 </html>
